@@ -1,0 +1,60 @@
+{
+  "name": "acmecrossassembler",
+  "displayName": "Acme Cross Assembler (C64)",
+  "description": "Develop Commodore 64 games using ACME Cross-Assembler",
+  "version": "0.0.18",
+  "preview": true,
+  "publisher": "TonyLandi",
+  "license": "GPL-3.0",
+  "author": {
+    "name": "Tony Landi"
+  },
+  "icon": "images/vsCodeC64Icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://lcnonline.visualstudio.com/8Bit/_git/AcmeCrossAssembler-VSCode"
+  },
+  "galleryBanner": {
+    "color": "#6c9fd2",
+    "theme": "light"
+  },
+  "categories": [
+    "Languages",
+    "Snippets",
+    "Linters",
+    "Debuggers",
+    "Formatters"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "asm",
+        "aliases": [
+          "6502",
+          "asm",
+          "acme"
+        ],
+        "extensions": [
+          ".asm",
+          ".acme",
+          ".a",
+          ".h"
+        ],
+        "configuration": "./syntaxes/language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "asm",
+        "scopeName": "source.asm",
+        "path": "./syntaxes/asm.tmLanguage.json"
+      }
+    ]
+  },
+  "engines": {
+    "vscode": "^1.22.0"
+  },
+  "devDependencies": {
+    "vsce": "^1.39.0"
+  }
+}
